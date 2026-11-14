@@ -1,0 +1,50 @@
+.about-section {
+    padding: 100px 60px;
+    background-color: #171717;
+    color: white;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 750px;
+    margin: auto;
+}
+
+.about-label {
+    color: #999999;
+    font-size: 48px;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+.about-content h2 {
+    color: white;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 25px;
+}
+
+.about-description {
+    color: #bbbbbb;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.about-content button {
+    padding: 13px;
+    background-color: white;
+    color: #171717;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px ) {
+    .about-label {
+        font-size: 39px;
+        padding-bottom: 10px;
+    }
+    .about-content h2 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+}

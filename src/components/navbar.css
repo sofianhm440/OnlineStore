@@ -1,0 +1,150 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #ffffff;
+    color: #171717;
+    position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+nav h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 70%;
+    z-index: 10;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav li:hover {
+    color: #888888;
+}
+
+nav button {
+    padding: 10px 20px;
+    background-color: #171717;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #ffffff;
+    color: #171717;
+    position: relative;
+}
+
+.navbar h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #888888;
+}
+
+.nav-action {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cart-button {
+    padding: 10px 20px;
+    background-color: #171717;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: black;
+}
+@media (max-width: 768px) {
+    .navbar {
+        padding: 20px;
+    }
+    .navbar h2 {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+    .hamburger {
+        display: block;
+        margin-bottom: 8px;
+    }
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 9%;
+        width: 50%;
+        background-color: #ffffff;
+        flex-direction: column;
+        gap: 15px;
+        padding: 10px 20px;
+        z-index: 10;
+    }
+    .nav-links.active {
+        display: flex;
+        border-radius: 15px;
+        margin-left: 15px;
+    }
+    .nav-links li {
+        width: 100%;
+        text-align: center;
+        white-space: nowrap;
+    }
+    .nav-links li a {
+        display: block;
+        width: 100%;
+        font-size: 18px;
+        padding: 5px 0;
+    }
+    .cart-button {
+        padding: 9px 12px;
+        margin-bottom: 3px;
+    }
+}
