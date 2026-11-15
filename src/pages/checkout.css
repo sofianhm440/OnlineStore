@@ -88,7 +88,7 @@
     font-size: 15px;
     font-weight: bold;
     cursor: pointer;
-    transition: o.3s;
+    transition: 0.3s;
 }
 
 .order-btn:hover {
@@ -97,7 +97,7 @@
 
 .back-btn {
     display: flex;
-    padding: 8px 8px;
+    padding: 10px 16px;
     margin-bottom: 30px;
     margin-left: 0;
     background-color: transparent;
@@ -124,5 +124,16 @@
 
     .orders {
         width: 100%;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .back-btn {
+        color: white;
+        border-color: white;
+    }
+    .back-btn:hover {
+        background-color: white;
+        color: #171717;
     }
 }
