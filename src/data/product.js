@@ -96,7 +96,7 @@ const products = [
         id: 12,
         name: "Workshirt",
         price: 159000,
-        category: "Jacket + Cargo",
+        category: "Shirt",
         image: work,
     },
     {
