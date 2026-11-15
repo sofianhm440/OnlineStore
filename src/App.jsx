@@ -51,7 +51,9 @@ function App() {
 
   return (
     <>
-      <Navbar cartCount={cart.length} onCartClick={() => setIsCartOpen(true)} />
+      {!isCheckoutOpen && !isSuccessOpen && (
+        <Navbar cartCount={cart.length} onCartClick={() => setIsCartOpen(true)} />
+      )}
 
       {isSuccessOpen ? (
         <OrderSuccess

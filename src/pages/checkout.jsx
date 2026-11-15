@@ -15,7 +15,7 @@ function Checkout({ cart, onPlaceOrder, backHome, cartCount }) {
 
     return (
         <div className="checkout">
-            <button className="back-btn" onClick={backHome}>Back to Home</button>
+            <button className="back-btn" onClick={backHome}>Back Home</button>
             <h1>Checkout</h1>
 
             <div className="contents">
