@@ -103,6 +103,10 @@ nav ul li a {
     cursor: pointer;
     color: black;
 }
+
+.navbar h2 {
+    color: #171717;
+}
 @media (max-width: 768px) {
     .navbar {
         padding: 20px;
