@@ -109,6 +109,7 @@ nav ul li a {
     }
     .navbar h2 {
         font-size: 24px;
+        font-weight: bold;
         margin-right: 10px;
     }
     .hamburger {
